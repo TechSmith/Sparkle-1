@@ -118,6 +118,27 @@
     return ui && [self hostSupportsItem:ui] && [self isItemNewer:ui] && ![self itemContainsSkippedVersion:ui];
 }
 
+- (BOOL)itemRequiresOSUpdate:(SUAppcastItem *)ui
+{
+   return ![self hostSupportsItem:ui] && [self isItemNewer:ui];
+}
+
+- (BOOL) doesNewItemExistThatRequiresOSUpdate:(SUAppcast *)ac
+{
+   BOOL exist = NO;
+   for( SUAppcastItem * item in [ac items] )
+   {
+      if ( [self itemRequiresOSUpdate:item] )
+      {
+         exist = YES;
+         self.updateItem = item; // Set this so that we can notify users in error message
+         break;
+      }
+   }
+
+   return exist;
+}
+
 - (void)appcastDidFinishLoading:(SUAppcast *)ac
 {
     if ([[self.updater delegate] respondsToSelector:@selector(updater:didFinishLoadingAppcast:)]) {
@@ -159,7 +180,11 @@
     if ([self itemContainsValidUpdate:item]) {
         self.updateItem = item;
         [self didFindValidUpdate];
-    } else {
+    }
+    else if ([self doesNewItemExistThatRequiresOSUpdate:ac]) {
+        [self didFindOSNeedsUpdate];
+    }
+    else {
         self.updateItem = nil;
         [self didNotFindUpdate];
     }
@@ -177,6 +202,19 @@
                                                         object:self.updater
                                                       userInfo:@{ SUUpdaterAppcastItemNotificationKey: self.updateItem }];
     [self downloadUpdate];
+}
+
+- (void)didFindOSNeedsUpdate
+{
+   if ([[self.updater delegate] respondsToSelector:@selector(updaterDidFindOSNeedsUpdate:)]) {
+       [[self.updater delegate] updaterDidFindOSNeedsUpdate:self.updater];
+   }
+   
+   [self abortUpdateWithError:[NSError errorWithDomain:SUSparkleErrorDomain
+                                                  code:SUNoUpdateError
+                                              userInfo:@{
+                                                         NSLocalizedDescriptionKey: [NSString stringWithFormat:SULocalizedString(@"%@ is required for this update.", "'Error' message when the user checks for updates and the only update in the feed requires an OS update. (not necessarily shown in UI)"), [self.updateItem minimumSystemVersion]]
+                                                         }]];
 }
 
 - (void)didNotFindUpdate
