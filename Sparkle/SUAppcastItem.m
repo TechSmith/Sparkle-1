@@ -192,4 +192,21 @@
     return self;
 }
 
+-(NSString*) description
+{
+   NSString* returnString = [super description];
+   
+   returnString = self.title ? [returnString stringByAppendingFormat:@" title: %@", self.title] : returnString;
+   
+   returnString = self.minimumSystemVersion ? [returnString stringByAppendingFormat:@" min: %@", self.minimumSystemVersion] : returnString;
+   
+   returnString = self.maximumSystemVersion ? [returnString stringByAppendingFormat:@" max: %@", self.maximumSystemVersion] : returnString;
+   
+   returnString = self.versionString ? [returnString stringByAppendingFormat:@" version: %@", self.versionString] : returnString;
+   
+   returnString = self.displayVersionString ? [returnString stringByAppendingFormat:@" displayVersion: %@", self.displayVersionString] : returnString;
+
+   return returnString;
+}
+
 @end
