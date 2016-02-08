@@ -216,6 +216,13 @@ SU_EXPORT extern NSString *const SUUpdaterAppcastNotificationKey;
 - (void)updater:(SUUpdater *)updater didFindValidUpdate:(SUAppcastItem *)item;
 
 /*!
+    Called after a valid update is not found and when there exists a newer item that needs an OS update.
+ 
+    \param updater The SUUpdater instance.
+*/
+- (void)updaterDidFindOSNeedsUpdate:(SUUpdater *)updater;
+
+/*!
     Called when a valid update is not found.
 
     \param updater The SUUpdater instance.

@@ -86,6 +86,20 @@
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationDidBecomeActive:) name:NSApplicationDidBecomeActiveNotification object:NSApp];
 }
 
+- (void)didFindOSNeedsUpdate
+{
+   if ([[self.updater delegate] respondsToSelector:@selector(updaterDidFindOSNeedsUpdate:)])
+         [[self.updater delegate] updaterDidFindOSNeedsUpdate:self.updater];
+   
+   NSAlert *alert = [[NSAlert alloc] init];
+   alert.messageText = SULocalizedString(@"New Version Available", "Status message shown when the user checks for updates and the only update in the feed requires an OS update.");
+   alert.informativeText = [NSString stringWithFormat:SULocalizedString(@"%@ %@ is currently available.  You must upgrade to Mac OS X version %@ or later to install this update.", nil), [self.host name], [self.updateItem displayVersionString], [self.updateItem minimumSystemVersion]];
+   [alert addButtonWithTitle:SULocalizedString(@"OK", nil)];
+
+   [self showAlert:alert];
+   [self abortUpdate];
+}
+
 - (void)didNotFindUpdate
 {
     if ([[self.updater delegate] respondsToSelector:@selector(updaterDidNotFindUpdate:)])

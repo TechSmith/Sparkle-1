@@ -29,6 +29,7 @@
 - (BOOL)itemContainsValidUpdate:(SUAppcastItem *)ui;
 - (void)appcastDidFinishLoading:(SUAppcast *)ac;
 - (void)didFindValidUpdate;
+- (void)didFindOSNeedsUpdate;
 - (void)didNotFindUpdate;
 
 - (void)downloadUpdate;

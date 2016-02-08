@@ -15,6 +15,10 @@ An easy-to-use software update framework for Cocoa developers.
 * Name of finish_installation.app can be configured to match your app's name.
 * Upgraded and more reliable binary delta and code signing verification.
 
+## TSC Changes
+* Ability to notify users when an update is available if they update their OS.
+<img src="Resources/OSUpdate.png" width="715" alt="Notify users of OS update">
+
 ## Features
 
 * True self-updating—the user can choose to automatically download and install all updates.
