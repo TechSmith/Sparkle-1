@@ -73,6 +73,11 @@
 
 "You're up-to-date!" = "Sie sind auf dem neuesten Stand!";
 
+/* Status message shown when the user checks for updates and the only update in the feed requires an OS update. */
+"New Version Available" = "Es gibt eine neue Version.";
+
+"%@ %@ is currently available.  You must upgrade to Mac OS X version %@ or later to install this update." = "%@ %@ ist im Moment nicht verfügbar.  Sie müssen auf Mac OS X Version %@ oder höher umstellen, um dieses Update installieren zu können.";
+
 /* Alternative name for "Install" button if we have a paid update or other update
 	without a download but with a URL. */
 
