@@ -235,11 +235,14 @@
 
     // We display a slightly different summary depending on if it's an "info-only" item or not
     NSString *finalString = nil;
-
+   
+    NSString * appName = self.updateItem.appNameChange;
+    if (appName == nil) appName = [self.host name];
+   
     if (self.updateItem.isInformationOnlyUpdate) {
-        finalString = [NSString stringWithFormat:SULocalizedString(@"%@ %@ is now available--you have %@. Would you like to learn more about this update on the web?", @"Description text for SUUpdateAlert when the update informational with no download."), self.host.name, updateItemVersion, hostVersion];
+        finalString = [NSString stringWithFormat:SULocalizedString(@"%@ %@ is now available--you have %@. Would you like to learn more about this update on the web?", @"Description text for SUUpdateAlert when the update informational with no download."), appName, updateItemVersion, hostVersion];
     } else {
-        finalString = [NSString stringWithFormat:SULocalizedString(@"%@ %@ is now available--you have %@. Would you like to download it now?", @"Description text for SUUpdateAlert when the update is downloadable."), self.host.name, updateItemVersion, hostVersion];
+        finalString = [NSString stringWithFormat:SULocalizedString(@"%@ %@ is now available--you have %@. Would you like to download it now?", @"Description text for SUUpdateAlert when the update is downloadable."), appName, updateItemVersion, hostVersion];
     }
     return finalString;
 }

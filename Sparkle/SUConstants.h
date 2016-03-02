@@ -79,5 +79,6 @@ extern NSString *const SURSSElementEnclosure;
 extern NSString *const SURSSElementLink;
 extern NSString *const SURSSElementPubDate;
 extern NSString *const SURSSElementTitle;
+extern NSString *const SURSSElementNameChange;
 
 #endif

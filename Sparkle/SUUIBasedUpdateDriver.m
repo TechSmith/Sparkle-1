@@ -93,7 +93,11 @@
    
    NSAlert *alert = [[NSAlert alloc] init];
    alert.messageText = SULocalizedString(@"New Version Available", "Status message shown when the user checks for updates and the only update in the feed requires an OS update.");
-   alert.informativeText = [NSString stringWithFormat:SULocalizedString(@"%@ %@ is currently available.  You must upgrade to Mac OS X version %@ or later to install this update.", nil), [self.host name], [self.updateItem displayVersionString], [self.updateItem minimumSystemVersion]];
+   
+   NSString * appName = self.updateItem.appNameChange;
+   if (appName == nil) appName = [self.host name];
+   
+   alert.informativeText = [NSString stringWithFormat:SULocalizedString(@"%@ %@ is currently available.  You must upgrade to Mac OS X version %@ or later to install this update.", nil), appName, [self.updateItem displayVersionString], [self.updateItem minimumSystemVersion]];
    [alert addButtonWithTitle:SULocalizedString(@"OK", nil)];
 
    [self showAlert:alert];

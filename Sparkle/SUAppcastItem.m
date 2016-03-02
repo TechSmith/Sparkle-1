@@ -27,6 +27,7 @@
 @property (copy, readwrite) NSString *displayVersionString;
 @property (copy, readwrite) NSDictionary *deltaUpdates;
 @property (strong, readwrite) NSURL *infoURL;
+@property (copy, readwrite) NSString *appNameChange;
 @property (readwrite, copy) NSDictionary *propertiesDictionary;
 @end
 
@@ -37,6 +38,7 @@
 @synthesize DSASignature;
 @synthesize fileURL;
 @synthesize infoURL;
+@synthesize appNameChange;
 @synthesize itemDescription;
 @synthesize maximumSystemVersion;
 @synthesize minimumSystemVersion;
@@ -106,6 +108,11 @@
         self.title = dict[SURSSElementTitle];
         self.date = dict[SURSSElementPubDate];
         self.itemDescription = dict[SURSSElementDescription];
+
+        // support for an app name change eg. Camtaisa 2 -> Camtasia 3
+        NSString * newAppName = [dict objectForKey:SURSSElementNameChange];
+        if (newAppName && [newAppName isKindOfClass:[NSString class]] && newAppName.length > 0)
+           self.appNameChange = newAppName;
 
         NSString *theInfoURL = dict[SURSSElementLink];
         if (theInfoURL) {
