@@ -200,6 +200,9 @@
 		767B61AC1972D488004E0C3C /* SUGuidedPackageInstaller.h in Headers */ = {isa = PBXBuildFile; fileRef = 767B61AA1972D488004E0C3C /* SUGuidedPackageInstaller.h */; };
 		767B61AD1972D488004E0C3C /* SUGuidedPackageInstaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 767B61AB1972D488004E0C3C /* SUGuidedPackageInstaller.m */; };
 		767B61AE1972D488004E0C3C /* SUGuidedPackageInstaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 767B61AB1972D488004E0C3C /* SUGuidedPackageInstaller.m */; };
+		A51A2C721C973377007E9BF4 /* SparkleTests-InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A51A2C741C973377007E9BF4 /* SparkleTests-InfoPlist.strings */; };
+		A51A2C771C973378007E9BF4 /* Sparkle-InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A51A2C791C973378007E9BF4 /* Sparkle-InfoPlist.strings */; };
+		A51A2C7C1C973379007E9BF4 /* Autoupdate-InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A51A2C7E1C973379007E9BF4 /* Autoupdate-InfoPlist.strings */; };
 		A5BF4F1D1BC7668B007A052A /* SUTestWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BF4F1C1BC7668B007A052A /* SUTestWebServer.m */; };
 		C23E885A1BE7AF890050BB73 /* SparkleTestCodeSignApp.enc.dmg in Resources */ = {isa = PBXBuildFile; fileRef = C23E88591BE7AF890050BB73 /* SparkleTestCodeSignApp.enc.dmg */; };
 		C23E885B1BE7B24F0050BB73 /* SparkleTestCodeSignApp.enc.dmg in Resources */ = {isa = PBXBuildFile; fileRef = C23E88591BE7AF890050BB73 /* SparkleTestCodeSignApp.enc.dmg */; };
@@ -639,6 +642,9 @@
 		767B61AB1972D488004E0C3C /* SUGuidedPackageInstaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUGuidedPackageInstaller.m; sourceTree = "<group>"; };
 		8DC2EF5A0486A6940098B216 /* Sparkle-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Sparkle-Info.plist"; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* Sparkle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sparkle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A51A2C731C973377007E9BF4 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = "de.lproj/SparkleTests-InfoPlist.strings"; sourceTree = "<group>"; };
+		A51A2C781C973378007E9BF4 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = "de.lproj/Sparkle-InfoPlist.strings"; sourceTree = "<group>"; };
+		A51A2C7D1C973379007E9BF4 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = "de.lproj/Autoupdate-InfoPlist.strings"; sourceTree = "<group>"; };
 		A5BF4F1B1BC7668B007A052A /* SUTestWebServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUTestWebServer.h; sourceTree = "<group>"; };
 		A5BF4F1C1BC7668B007A052A /* SUTestWebServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUTestWebServer.m; sourceTree = "<group>"; };
 		C23E88591BE7AF890050BB73 /* SparkleTestCodeSignApp.enc.dmg */ = {isa = PBXFileReference; lastKnownFileType = file; path = SparkleTestCodeSignApp.enc.dmg; sourceTree = "<group>"; };
@@ -780,6 +786,7 @@
 		089C1665FE841158C02AAC07 /* Framework Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A51A2C791C973378007E9BF4 /* Sparkle-InfoPlist.strings */,
 				8DC2EF5A0486A6940098B216 /* Sparkle-Info.plist */,
 				61AAE8220A321A7F00D8810D /* Sparkle.strings */,
 				55C14BDA136EF20D00649790 /* SUAutomaticUpdateAlert.xib */,
@@ -890,6 +897,7 @@
 		55C14BD5136EEFD000649790 /* Autoupdate */ = {
 			isa = PBXGroup;
 			children = (
+				A51A2C7E1C973379007E9BF4 /* Autoupdate-InfoPlist.strings */,
 				55C14BB9136EEF1500649790 /* Autoupdate-Info.plist */,
 				55C14BD3136EEFCE00649790 /* Autoupdate.m */,
 			);
@@ -930,6 +938,7 @@
 		61227A100DB5484000AB99EA /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				A51A2C741C973377007E9BF4 /* SparkleTests-InfoPlist.strings */,
 				14958C7019AEBE350061B14F /* Resources */,
 				72AFC6121B9A944200F6B565 /* Sparkle Unit Tests-Bridging-Header.h */,
 				612279DA0DB5470200AB99EA /* SparkleTests-Info.plist */,
@@ -1391,6 +1400,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A51A2C721C973377007E9BF4 /* SparkleTests-InfoPlist.strings in Resources */,
 				14958C6E19AEBC950061B14F /* signed-test-file.txt in Resources */,
 				72AC6B2E1B9B218C00F62325 /* SparkleTestCodeSignApp.dmg in Resources */,
 				C23E885B1BE7B24F0050BB73 /* SparkleTestCodeSignApp.enc.dmg in Resources */,
@@ -1409,6 +1419,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1420DF51196247F900203BB0 /* Images.xcassets in Resources */,
+				A51A2C7C1C973379007E9BF4 /* Autoupdate-InfoPlist.strings in Resources */,
 				55C14FC7136F05E100649790 /* Sparkle.strings in Resources */,
 				55C14BD9136EF00C00649790 /* SUStatus.xib in Resources */,
 			);
@@ -1433,6 +1444,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A51A2C771C973378007E9BF4 /* Sparkle-InfoPlist.strings in Resources */,
 				61AAE8280A321A7F00D8810D /* Sparkle.strings in Resources */,
 				C23E885A1BE7AF890050BB73 /* SparkleTestCodeSignApp.enc.dmg in Resources */,
 				55C14BEE136EF20D00649790 /* SUAutomaticUpdateAlert.xib in Resources */,
@@ -1887,6 +1899,30 @@
 				61B5F92D09C4CFD800B25A18 /* English */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		A51A2C741C973377007E9BF4 /* SparkleTests-InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A51A2C731C973377007E9BF4 /* de */,
+			);
+			name = "SparkleTests-InfoPlist.strings";
+			sourceTree = "<group>";
+		};
+		A51A2C791C973378007E9BF4 /* Sparkle-InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A51A2C781C973378007E9BF4 /* de */,
+			);
+			name = "Sparkle-InfoPlist.strings";
+			sourceTree = "<group>";
+		};
+		A51A2C7E1C973379007E9BF4 /* Autoupdate-InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A51A2C7D1C973379007E9BF4 /* de */,
+			);
+			name = "Autoupdate-InfoPlist.strings";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

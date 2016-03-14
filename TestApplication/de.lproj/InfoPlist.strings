@@ -1,3 +1,9 @@
-/* Localized versions of Info.plist keys */
+/* (No Commment) */
+"CFBundleName" = "Sparkle Test-App";
 
-NSHumanReadableCopyright = "© Andy Matuschak, 2006";
+/* (No Commment) */
+"CFBundleShortVersionString" = "1.5";
+
+/* (No Commment) */
+"NSHumanReadableCopyright" = "© Andy Matuschak, 2006";
+

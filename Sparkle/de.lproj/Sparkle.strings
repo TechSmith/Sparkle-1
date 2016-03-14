@@ -1,84 +1,117 @@
+/* (No Commment) */
+"%1$@ %2$@ has been downloaded and is ready to use! This is an important update; would you like to install it and relaunch %1$@ now?" = "%1$@ %2$@ wurde heruntergeladen und steht zur Verwendung bereit! Dies ist ein wichtiges Update. Möchten Sie %1$@ jetzt durch die neue Version ersetzen und neu starten?";
+
+/* (No Commment) */
 "%1$@ %2$@ has been downloaded and is ready to use! Would you like to install it and relaunch %1$@ now?" = "%1$@ %2$@ wurde heruntergeladen und steht zur Verwendung bereit! Möchten Sie %1$@ jetzt durch die neue Version ersetzen und neu starten?";
 
-"%1$@ can't be updated when it's running from a read-only volume like a disk image or an optical drive. Move %1$@ to your Applications folder, relaunch it from there, and try again." = "%1$@ kann nicht aktualisiert werden, wenn es von einem Volumen ohne Schreibzugriff (z.B. Disk Image oder CD/DVD) gestartet wurde. Kopieren Sie %1$@ in den Programme Ordner, aktualisieren Sie es von dort.";
+/* (No Commment) */
+"%1$@ can't be updated when it's running from a read-only volume like a disk image or an optical drive. Move %1$@ to your Applications folder, relaunch it from there, and try again." = "%1$@ kann nicht aktualisiert werden, wenn es von einem Volumen ohne Schreibzugriff (z.B. Disk Image oder CD/DVD) gestartet wurde. Kopieren Sie %1$@ in den Ordner „Programme“ und aktualisieren Sie es von dort.";
 
+/* (No Commment) */
+"%@ %@ is currently available.  You must upgrade to Mac OS X version %@ or later to install this update." = "%@ %@ ist verfügbar. Zur Installation dieses Updates müssen Sie auf Mac OS X Version %@ aktualisieren.";
+
+/* (No Commment) */
 "%@ %@ is currently the newest version available." = "%1$@ %2$@ ist zur Zeit die neueste verfügbare Version.";
 
-/* Description text for SUUpdateAlert when the update is downloadable. */
+/* (No Commment) */
 "%@ %@ is now available--you have %@. Would you like to download it now?" = "%1$@ %2$@ ist verfügbar (Sie verwenden Version %3$@). Möchten Sie die neue Version jetzt herunterladen?";
 
-/* Description text for SUUpdateAlert when the update informational with no download. */
-"%@ %@ is now available--you have %@. Would you like to learn more about this update on the web?" = "%1$@ %2$@ is now available--you have %3$@. Would you like to learn more about this update on the web?";
+/* (No Commment) */
+"%@ %@ is now available--you have %@. Would you like to learn more about this update on the web?" = "%1$@ %2$@ ist verfügbar (Sie verwenden Version %3$@). Möchten Sie sich im Internet genauer über dieses Update informieren?";
 
+/* (No Commment) */
 "%@ downloaded" = "%@ heruntergeladen";
 
+/* (No Commment) */
 "%@ of %@" = "%1$@ von %2$@";
 
+/* (No Commment) */
 "A new version of %@ is available!" = "Eine neue Version von %@ ist verfügbar!";
 
+/* (No Commment) */
 "A new version of %@ is ready to install!" = "Eine neue Version von %@ ist zur Installation bereit!";
 
-"An error occurred in retrieving update information. Please try again later." = "Bei der Aktualisierung trat ein Fehler auf. Bitte versuchen Sie es später erneut.";
+/* (No Commment) */
+"An error occurred in retrieving update information. Please try again later." = "Beim Abruf der Aktualisierungsinformationen ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.";
 
+/* (No Commment) */
 "An error occurred while downloading the update. Please try again later." = "Beim Herunterladen ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.";
 
+/* (No Commment) */
 "An error occurred while extracting the archive. Please try again later." = "Beim Entpacken der Daten ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.";
 
+/* (No Commment) */
 "An error occurred while installing the update. Please try again later." = "Bei der Installation der Aktualisierung ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.";
 
+/* (No Commment) */
 "An error occurred while parsing the update feed." = "Beim Lesen der Aktualisierungsinformationen ist ein Fehler aufgetreten.";
 
+/* (No Commment) */
 "An error occurred while relaunching %1$@, but the new version will be available next time you run %1$@." = "Beim erneuten Starten von %1$@ ist ein Fehler aufgetreten. Die neue Version von %1$@ steht beim nächsten Programmstart zur Verfügung.";
 
-/* the unit for bytes */
+/* (No Commment) */
+"An important update to %@ is ready to install" = "Ein wichtiges Update von %@ ist zur Installation bereit";
+
+/* (No Commment) */
 "B" = "B";
 
+/* (No Commment) */
 "Cancel" = "Abbrechen";
 
+/* (No Commment) */
 "Cancel Update" = "Aktualisierung abbrechen";
 
-"Checking for updates..." = "Suche nach Aktualisierungen …";
+/* (No Commment) */
+"Checking for updates..." = "Suche nach Aktualisierungen…";
 
-/* Take care not to overflow the status window. */
-"Downloading update..." = "Aktualisierung wird heruntergeladen …";
+/* (No Commment) */
+"Downloading update..." = "Aktualisierung wird heruntergeladen…";
 
-/* Take care not to overflow the status window. */
-"Extracting update..." = "Aktualisierung entpacken …";
+/* (No Commment) */
+"Extracting update..." = "Aktualisierung entpacken…";
 
-/* the unit for gigabytes */
+/* (No Commment) */
 "GB" = "GB";
 
+/* (No Commment) */
 "Install and Relaunch" = "Installieren und erneut starten";
 
-/* Take care not to overflow the status window. */
-"Installing update..." = "Aktualisierung installieren …";
+/* (No Commment) */
+"Installing update..." = "Aktualisierung installieren…";
 
-/* the unit for kilobytes */
+/* (No Commment) */
 "KB" = "KB";
 
-/* the unit for megabytes */
+/* (No Commment) */
+"Learn More..." = "Weitere Infos…";
+
+/* (No Commment) */
 "MB" = "MB";
 
+/* (No Commment) */
+"New Version Available" = "Neue Version verfügbar";
+
+/* (No Commment) */
 "OK" = "OK";
 
+/* (No Commment) */
 "Ready to Install" = "Bereit zum Installieren";
 
+/* (No Commment) */
 "Should %1$@ automatically check for updates? You can always check for updates manually from the %1$@ menu." = "Soll %1$@ automatisch nach Aktualisierungen suchen? Sie können im %1$@-Menü auch manuell nach Aktualisierungen suchen.";
 
+/* (No Commment) */
+"The update is improperly signed." = "Die Aktualisierung ist nicht korrekt signiert.";
+
+/* (No Commment) */
 "Update Error!" = "Fehler beim Aktualisieren!";
 
-"Updating %@" = "Aktualisierung von %@";
+/* (No Commment) */
+"Updating %@" = "%@ wird aktualisiert";
 
+/* (No Commment) */
 "You already have the newest version of %@." = "Sie haben bereits die neueste Version von %@.";
 
+/* (No Commment) */
 "You're up-to-date!" = "Sie sind auf dem neuesten Stand!";
 
-/* Status message shown when the user checks for updates and the only update in the feed requires an OS update. */
-"New Version Available" = "Es gibt eine neue Version.";
-
-"%@ %@ is currently available.  You must upgrade to Mac OS X version %@ or later to install this update." = "%@ %@ ist im Moment verfügbar.  Sie müssen auf Mac OS X Version %@ oder höher umstellen, um dieses Update installieren zu können.";
-
-/* Alternative name for "Install" button if we have a paid update or other update
-	without a download but with a URL. */
-
-"Learn More..." = "Mehr über …";
