@@ -1979,6 +1979,15 @@
 			buildSettings = {
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Weverything",
+					"-Wno-unused-macros",
+					"-Wno-gnu-statement-expression",
+					"-Wno-arc-repeated-use-of-weak",
+					"-Wno-auto-import",
+					"$(WARNING_CFLAGS_EXTRA)",
+				);
 			};
 			name = Coverage;
 		};
@@ -2007,6 +2016,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA1941D30D94A70100DD942E /* ConfigRelaunchDebug.xcconfig */;
 			buildSettings = {
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Weverything",
+					"-Wno-unused-macros",
+					"-Wno-gnu-statement-expression",
+					"-Wno-arc-repeated-use-of-weak",
+					"-Wno-auto-import",
+					"$(WARNING_CFLAGS_EXTRA)",
+				);
 			};
 			name = Coverage;
 		};
@@ -2034,6 +2052,15 @@
 			buildSettings = {
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Weverything",
+					"-Wno-unused-macros",
+					"-Wno-gnu-statement-expression",
+					"-Wno-arc-repeated-use-of-weak",
+					"-Wno-auto-import",
+					"$(WARNING_CFLAGS_EXTRA)",
+				);
 			};
 			name = Debug;
 		};
@@ -2043,6 +2070,15 @@
 			buildSettings = {
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Weverything",
+					"-Wno-unused-macros",
+					"-Wno-gnu-statement-expression",
+					"-Wno-arc-repeated-use-of-weak",
+					"-Wno-auto-import",
+					"$(WARNING_CFLAGS_EXTRA)",
+				);
 			};
 			name = Release;
 		};
@@ -2068,6 +2104,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA1941D30D94A70100DD942E /* ConfigRelaunchDebug.xcconfig */;
 			buildSettings = {
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Weverything",
+					"-Wno-unused-macros",
+					"-Wno-gnu-statement-expression",
+					"-Wno-arc-repeated-use-of-weak",
+					"-Wno-auto-import",
+					"$(WARNING_CFLAGS_EXTRA)",
+				);
 			};
 			name = Debug;
 		};
@@ -2075,6 +2120,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA1941D40D94A70100DD942E /* ConfigRelaunchRelease.xcconfig */;
 			buildSettings = {
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Weverything",
+					"-Wno-unused-macros",
+					"-Wno-gnu-statement-expression",
+					"-Wno-arc-repeated-use-of-weak",
+					"-Wno-auto-import",
+					"$(WARNING_CFLAGS_EXTRA)",
+				);
 			};
 			name = Release;
 		};
